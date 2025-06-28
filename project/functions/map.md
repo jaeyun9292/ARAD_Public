@@ -38,14 +38,12 @@
 
 ### 1️⃣ 구글 맵 스타일 커스텀
 
-`GoogleMap.setMapStyle()`을 통해 스타일 커스텀을 적용했습니다. <br>  
-[스타일 지정 마법사](https://mapstyle.withgoogle.com/)를 사용했고, 디자인은 [SnazzyMaps - Subtle Grayscale](https://snazzymaps.com/style/15/subtle-grayscale)을 참고했습니다.
+`GoogleMap.setMapStyle()`을 사용해 스타일을 커스터마이징했으며, <br>
+[스타일 마법사](https://mapstyle.withgoogle.com/)와 [SnazzyMaps - Subtle Grayscale](https://snazzymaps.com/style/15/subtle-grayscale) 디자인을 참고했습니다.
 
 ```kotlin
 mGoogleMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(mContext, R.raw.style2_json))
 ```
-
-📎 [Google Map API Docs](https://developers.google.com/android/reference/com/google/android/gms/maps/MapView?authuser=0)
 
 ---
 
@@ -99,12 +97,9 @@ override fun setLastLocation(location: Location) {
 }
 ```
 
-📎 [Google Maps - Camera & View](https://developers.google.com/maps/documentation/android-sdk/views?hl=ko)
-
 ---
 
 ## 📚 Reference
-- https://breadboy.tistory.com/282  
 - https://developers.google.com/maps/documentation/get-map-id?hl=ko&authuser=0  
-- https://stackoverflow.com/questions/39315219/custom-marker-with-user-image-inside-the-pin
-
+- https://developers.google.com/android/reference/com/google/android/gms/maps/MapView?authuser=0
+- https://developers.google.com/maps/documentation/android-sdk/views?hl=ko
