@@ -90,5 +90,5 @@ Firebase는 외부에서 `com.google.firebase.MESSAGING_EVENT`액션을 통해 `
 
 ## 🔗 Reference
 
-- [Firebase Cloud Messaging 기본 개념 및 구현](https://donghun.dev/Firebase-Cloud-Messaging)  
-- [FCM 레퍼런스 예시](https://seopseop911.tistory.com/20)
+- https://donghun.dev/Firebase-Cloud-Messaging
+- https://seopseop911.tistory.com/20
