@@ -79,10 +79,12 @@ Firebase는 외부에서 com.google.firebase.MESSAGING_EVENT 액션을 통해 My
 ---
 
 ## 📷 Screenshot
-<h1>
+<h1 align="center">
+    
 |    푸시 알람    |    푸시 알람 클릭    |
 |:-------------:|:-------------:|
 | <img src="https://github.com/user-attachments/assets/50661241-3af5-4fee-838a-7d72bfc5c856" width="180" height="90"/> | <img src="https://github.com/user-attachments/assets/5a4d97a5-99f6-48d6-a983-7bf1e511e332" width="180" height="400"/> |
+
 </h1>
 
 ---
