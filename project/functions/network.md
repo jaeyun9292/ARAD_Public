@@ -30,10 +30,10 @@
 | :-------------: | :-------------: | :-------------: |
 | <img src="https://github.com/user-attachments/assets/c8007af9-9fde-405e-b34f-0dcb2ee2c85c" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/b6182c6f-09e7-404d-b03f-5233b9a90eab" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/7d455f94-cc37-40eb-90f4-47631dd33dc6" width="250" height="450"/> | 
  
-
 |  업로드 정보  |
-| :-------------: |
-| <img src="https://github.com/user-attachments/assets/de9ef169-b9c0-4e7e-a305-94f108f5f7e9" width="600" height="450"/> | 
+|:-------------:|
+| <img src="https://github.com/user-attachments/assets/de9ef169-b9c0-4e7e-a305-94f108f5f7e9" width="570" height="450"/> |
+
 
 </h1>
 
