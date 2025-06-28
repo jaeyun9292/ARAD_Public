@@ -1,5 +1,6 @@
 ## 🔍 Login
-소셜 로그인은 Google과 Kakao에서 제공하는 OAuth API를 활용해 Access Token을 발급받아 인증 절차를 진행하고, 이후 자체 서버로 인증 정보를 전달해 사용자 식별 및 로그인 처리를 완료합니다. <br>
+소셜 로그인은 Google과 Kakao에서 제공하는 OAuth API를 활용해 Access Token을 발급받아 인증 절차를 진행하고,<br>
+이후 자체 서버로 인증 정보를 전달해 사용자 식별 및 로그인 처리를 완료합니다. <br>
 
 ---
 
@@ -8,7 +9,6 @@
   - [x] 회원 가입 및 탈퇴 기능
   - [x] 로그인 토큰 수령 및 사용자 정보 수집
   - [x] UX 최적
-<br>
 
 ---
 
@@ -20,7 +20,6 @@
 | <img src="https://github.com/user-attachments/assets/4e724765-1df1-4c0b-b905-6f19a8fc40e8" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/8554ba75-df1b-4ec6-9f04-e1d000466dcf" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/3dbf7731-770c-4975-8a30-223b925d0ee6" width="200" height="450"/> |
 
 </h1>
-<br>
 
 ---
 
