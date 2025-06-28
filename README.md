@@ -35,7 +35,7 @@
 * [구글 Map 구현(custom theme 적용)](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/map.md) <br> 
 * UI 구성(Jetpack Navigation & SAA) <br> 
 
-## 서비스 아키텍텍처
+## 서비스 아키텍처
 ![image-4](https://github.com/user-attachments/assets/f3d82a87-5e2a-434e-b6f0-6b3c7dda8be8)
 
 
