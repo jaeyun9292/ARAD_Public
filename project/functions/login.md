@@ -1,5 +1,5 @@
 ## 🔍 Login
-소셜 로그인은 Google과 Kakao에서 제공하는 OAuth API를 활용해 Access Token을 발급받아 인증 절차를 진행하고, 이후 자체 서버로 인증 정보를 전달해 사용자 식별 및 로그인 처리를 완료합니다. <br><br>
+소셜 로그인은 Google과 Kakao에서 제공하는 OAuth API를 활용해 Access Token을 발급받아 인증 절차를 진행하고, 이후 자체 서버로 인증 정보를 전달해 사용자 식별 및 로그인 처리를 완료합니다. <br>
 
 ---
 
@@ -30,7 +30,7 @@
 초기에는 로그인 기능이 특정 화면에 직접 구현되어 있어, 앱 전역에서 재사용하거나 테스트하기 어려운 구조였습니다. <br>
 
 이를 해결하기 위해, 로그인 로직을 클래스 단위로 분리하고 Repository 패턴을 적용하여 도메인 계층으로 분리하였습니다. <br>
-이후 클린 아키텍처 기반으로 ViewModel → UseCase → Repository 구조를 도입했습니다. <br><br>
+이후 클린 아키텍처 기반으로 ViewModel → UseCase → Repository 구조를 도입했습니다. <br>
 
 <b>LoginViewModel.kt</b>
 ```kotlin
