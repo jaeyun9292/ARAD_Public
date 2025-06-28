@@ -38,7 +38,7 @@
 
 ### 1️⃣ 구글 맵 스타일 커스텀
 
-`GoogleMap.setMapStyle()`을 사용해 스타일을 커스터마이징했으며, [스타일 마법사](https://mapstyle.withgoogle.com/)와 [SnazzyMaps - Subtle Grayscale](https://snazzymaps.com/style/15/subtle-grayscale) 디자인을 참고했습니다.
+`GoogleMap.setMapStyle()`을 사용해 스타일을 커스터마이징했으며, [스타일 마법사](https://mapstyle.withgoogle.com/)와 [Subtle Grayscale](https://snazzymaps.com/style/15/subtle-grayscale) 디자인을 참고했습니다.
 
 ```kotlin
 mGoogleMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(mContext, R.raw.style2_json))
