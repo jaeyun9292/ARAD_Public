@@ -1,56 +1,68 @@
 ## 🔍 Login
-소셜 로그인은 구글과 카카오에서 제공하는 API를 이용하여 구현했습니다.
-사용자는 OAuth를 통해 Access Token을 받아 인증 토큰으로 소셜 플랫폼에 접속합니다.
-이후, 사용자의 접근 가능한 로그인 정보를 자체 서버에 전달 합니다.
+소셜 로그인은 Google과 Kakao에서 제공하는 OAuth API를 활용해 구현했습니다. <br>
+사용자는 소셜 플랫폼을 통해 Access Token을 발급받아 인증 절차를 진행하며, 이후 자체 서버로 인증 정보를 전달해 사용자 식별 및 로그인 처리를 완료합니다. <br>
 
 ## 📝 Feature Check List
-  - [x] 소셜 로그인(카카오, 구글)
-  - [x] 회원 가입, 탈퇴 기능 구현
-  - [x] 로그인 토큰 수령 및 유저 정보 수집
-  - [x] UX 고도화
+  - [x] Google, Kakao 소셜 로그인
+  - [x] 회원 가입 및 탈퇴 기능
+  - [x] 로그인 토큰 수령 및 사용자 정보 수집
+  - [x] UX 최적
 
 ## 📷 Screenshot
-
-<!-- 작업한 화면이 있다면 스크린 샷으로 첨부해주세요. -->
-
 <h1 align="center">
 
 |    소셜 로그인1    |   소셜 로그인2   |  소셜 로그인3 |
 | :-------------: | :-------------: | :-------------: |
 | <img src="https://github.com/user-attachments/assets/4e724765-1df1-4c0b-b905-6f19a8fc40e8" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/8554ba75-df1b-4ec6-9f04-e1d000466dcf" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/3dbf7731-770c-4975-8a30-223b925d0ee6" width="200" height="450"/> |
 
-
 </h1>
+
 
 ## 📮 관련 이슈
 
-### 로그인 기능 클래스화 
-로그인 기능을 해당 화면에서만 사용하는 것이 아닌 앱 자체에서 소셜 로그인 & 사용자 정보 기능을 요청
+### 로그인 기능 클래스 분리 및 구조 개선
+초기에는 로그인 기능이 특정 화면에 직접 구현되어 있어, 앱 전역에서 재사용하거나 테스트하기 어려운 구조였습니다.. <br>
 
-객체 지향 프로그래밍의 개념이 없던 상태로 프로젝트를 진행하게 되었고, 로그인 기능을 따로 분리하여 호출하는 방식으로 Repository 디자인 패턴을 활용하여 구현하는 방식으로 코드를 수정하게 되었습니다.
+로그인 기능을 해당 화면에서만 사용하는 것이 아닌 앱 자체에서 소셜 로그인 & 사용자 정보 기능을 요청 
 
-Repository 패턴 적용 후 로그인 화면에서 호출 예시
+이를 해결하기 위해, 로그인 로직을 클래스 단위로 분리하고 Repository 패턴을 적용하여 도메인 계층으로 분리하였습니다.
+이후 클린 아키텍처 기반으로 ViewModel → UseCase → Repository 구조를 도입했습니다. <br>
+
+testets
+testes
+testse
+
+LoginViewModel.kt
 ```kotlin
-class LoginActivity : BaseActivity<ActivityLoginMainBinding>({ActivityLoginMainBinding.inflate(it)}) {
-    private val KakaoRepository: KakaoLoginRepository = KakaoLoginRepositoryImpl()
-    private val GoogleRepository: GoogleLoginRepository = GoogleLoginRepositoryImpl()
-    ...
+@HiltViewModel
+class LoginViewModel @Inject constructor(
+	private val loginWithKakaoUseCase: LoginWithKakaoUseCase,
+	private val loginWithGoogleUseCase: LoginWithGoogleUseCase,
+	private val logoutUseCase: LogoutUseCase
+) : ViewModel() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setLogin()              // 구글, 카카오 소셜 로그인 섵정
+	private val _loginResult = MutableStateFlow<Result<UserInfo>?>(null)
+	val loginResult: StateFlow<Result<UserInfo>?> = _loginResult.asStateFlow()
 
-        binding.btnStartKakaoLogin.setOnClickListener{
-            KakaoRepository.SignIn()
-        }
-        binding.btnStartGoogleLogin.setOnClickListener {
-            GoogleRepository.GoogleSignIn(resultLauncher)
-        }
-    }
+	fun loginWithKakao() {
+		viewModelScope.launch {
+			val result = loginWithKakaoUseCase()
+			_loginResult.value = result
+		}
+	}
 
-    private fun setLogin() {
-        KakaoRepository.setLogin(this, context = this)
-        GoogleRepository.setLogin(this, context = this)
-    }
-    ...
+	fun loginWithGoogle() {
+		viewModelScope.launch {
+			val result = loginWithGoogleUseCase()
+			_loginResult.value = result
+		}
+	}
+
+	fun logout() {
+		viewModelScope.launch {
+			logoutUseCase() 
+			_loginResult.value = null
+		}
+	}
+}
 ```
