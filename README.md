@@ -8,10 +8,9 @@
 * ARAD 앱은 유저의 참여에 대한 보상을 제공하는 앱입니다. <br> 
 * 이벤트 장소에 생성된 AR 이미지를 촬영하면 포인트를 받을 수 있습니다. <br>
 * 사용자는 적립한 포인트를 다양한 상품권으로 교환할 수 있습니다. <br> 
-* 쿠팡 파트너스 및 제휴 업체의 AR 광고를 통해 효과적인 마케팅효과를 기대할 수 있습니다. <br>
+* 쿠팡 파트너스 및 제휴 업체의 AR 광고를 통해 효과적인 마케팅효과를 기대할 수 있습니다. <br><br>
 
 ## 사용 기술
-<br>
 <div align=center> 
 <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=Figma&logoColor=white"> 
 <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=Android&logoColor=white"> 
@@ -20,12 +19,8 @@
 <img src="https://img.shields.io/badge/Google Maps-4285F4?style=for-the-badge&logo=googlemaps&logoColor=white"> 
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> 
 <img src="https://img.shields.io/badge/unity-FCC624?style=for-the-badge&logo=unity&logoColor=black"> 
-
-
 </div>
 <br>
-<br>
-
 
 ## 구현 기능
 * [소셜 로그인(Kakao, Google)](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/login.md)<br> 
@@ -33,7 +28,7 @@
 * [FCM 푸시](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/fcm.md)<br> 
 * [Retrofit2 이용한 GCP 서버와 Http 통신](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/network.md) <br> 
 * [커스텀 테마 적용한 구글 맵 구현](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/map.md) <br> 
-* SAA 기반 Jetpack Navigation 구조 설계 <br> 
+* SAA 기반 Jetpack Navigation 구조 설계 <br><br>
 
 ## 서비스 아키텍처
 ![image-4](https://github.com/user-attachments/assets/f3d82a87-5e2a-434e-b6f0-6b3c7dda8be8)
@@ -41,7 +36,7 @@
 
 <br>
 
-## 앱 화면 스크린샷
+## 스크린샷
 
 <h1 align="center">
 
