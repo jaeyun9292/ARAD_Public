@@ -1,150 +1,15 @@
-## 🔍 map(Google)
-우선 총 3가지 지도 API(google, kakao, naver)중에서 구글 맵을 선택한 이유를 말씀 드리자면 
-- 다양한 API & 개발 자료 보유
-    - 카메라 이동 & 각도 조절
-    - 마커
-    - time zone
-    - 등등
-- 전 세계적인 데이터베이스 보유
-    - ARCore Geospatial API 기반 좌표 데이터를 사용해 여러 나라에서 사용 가능
-- 다양한 map 커스텀 기능
-
-> 위 작업들을 수행하기 위해 GPS 권한 설정, Marker 설정을 위해 서버와 데이터 송수신 등 이 내용은 [permission](https://github.com/Gnoam-R/ARAD/blob/main/project/functions/permission.md), [network](https://github.com/Gnoam-R/ARAD/blob/main/project/functions/network.md)를 확인 해주시면 됩니다.
-
-<br/>
-
-## 📝 Feature Check List
-  - [x] 구글 map API 구현
-  - [x] map 배경 커스텀
-  - [x] map Marker bitmap 커스텀 적용
-  - [x] POI 위치 데이터 기반(위경도) map Marker 활성화
-  - [ ] 현재 나의 위치 to 지하철 위치 & 거리 측정 및 AR Marker 거리 측정
-
-## 📷 Screenshot
-
-<!-- 작업한 화면이 있다면 스크린 샷으로 첨부해주세요. -->
-
-<h1 align="center">
-
-|   구글 맵1   |   구글 맵2   |  구글 맵3 |
-| :-------------: | :-------------: | :-------------: |
-| <img src="https://github.com/user-attachments/assets/f2f1aea6-041c-4ba5-9d28-5428a8c295b0" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/f810c3d4-a82b-4ffb-bead-c388fdfcdf58" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/4ab83bdc-69be-474f-91c7-6b75ea455f38" width="200" height="450"/> |
-</h1>
-
-## 📮 관련 이슈
-
-### 구글 맵, 마커 스타일 커스텀 & POI 위치 기반 트래킹
-
-기본 마커와 구글 맵 플랫폼 디자인을 활용하는 것이 아닌 커스텀된 이미지의 디자인이 필요하게 되었습니다.
-
-<br/>
-
-1️⃣ 구글 맵 스타일 커스텀
-
-[Google Map API](https://developers.google.com/android/reference/com/google/android/gms/maps/MapView?authuser=0)를 사용하면 구글에서 제공하는 다양한 API를 사용할 수 있습니다.
-
- 
-```kotlin
-//GoogleMapRepositoryImpl.kt
-
-// 현재 커스텀 된 구글 맵 View
-mGoogleMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(mContext, R.raw.style2_json))
-
-```
-
-`setMapSytle` 에 관한 것은 위 API에서 지도 플랫폼에 [스타일 지정 마법사](https://mapstyle.withgoogle.com/)를 사용해 개발하는 방법을 활용했습니다.
-그리고 SnazzyMaps에 들어가면 여러 사람들이 커스텀한 디자인 포맷이 공유되어 있기에 저는 [Subtle Grayscale](https://snazzymaps.com/style/15/subtle-grayscale) 디자인을 선택하여 적용하게 되었습니다.
-
-<br/>
-
-2️⃣ 마커 커스텀
-
-마커에 위치, 제목, 이미지를 추가하여 맵에 적용
-
-```kotlin
-
-mGoogleMap.addMarker(
-    MarkerOptions()
-        .position(ttukseomStarbucks)
-        .title("뚝섬 스타벅스")
-        .icon(BitmapDescriptorFactory.fromBitmap(bitmapStarBucks!!))
-)
-mGoogleMap.addMarker(
-    MarkerOptions()
-        .position(nearTtukseomStarbucks)
-        .title("스타벅스 건너편")
-        .icon(BitmapDescriptorFactory.fromBitmap(bitmapStarBucksOpposite!!))
-)
-
-bitmapStarBucks = createUserBitmap(BitmapFactory.decodeResource(mActivity.resources, com.example.arad_january.R.drawable.ic_profile_ex2))
-bitmapStarBucksOpposite = createUserBitmap(BitmapFactory.decodeResource(mActivity.resources, com.example.arad_january.R.drawable.ic_profile_ex2))
-```
-
-<br/>
-
-3️⃣ POI 위 경도 데이터 기반 카메라 이동 및 마킹
-
-서버로 부터 위 경도 데이터를 받아오고 그 후에 `setLastLocation` 코드를 실행 시켰습니다.
-MapView onCreate -> 서버와 데이터 송 수신 -> `setLastLocation` 코드 실행 순으로 수행 되어 callBack을 활용하여 해당 flow를 구현했습니다.
-
-```kotlin
-class GoogleMapRepositoryImpl () : GoogleMapRepository {
-    ...
-    override fun setLastLocation(location: Location) {
-            val myLocation = LatLng(location.latitude, location.longitude)
-            // 현재 나의 위치에 마킹하는 변수
-            val marker = MarkerOptions()
-                .position(myLocation)
-                .title("i am here")
-            // 
-            val cameraOptions = CameraPosition.Builder()
-                .target((myLocation))
-                .zoom(18.0f)
-                .tilt(45.0f)           // 고도 각도 조절
-                .bearing(90f)          // 좌 우 각도 조절
-                .build()
-    
-            val camera = CameraUpdateFactory.newCameraPosition(cameraOptions)
-    
-            MyLocation = myLocation
-            MyCameraOptions = cameraOptions
-            MyCamera =  CameraUpdateFactory.newCameraPosition(MyCameraOptions)
-    }
-    ...
-```
-[Google Maps Platform - camera & view](https://developers.google.com/maps/documentation/android-sdk/views?hl=ko)
-
-## reference
-
-https://breadboy.tistory.com/282
-
-https://developers.google.com/maps/documentation/get-map-id?hl=ko&authuser=0
-
-https://stackoverflow.com/questions/39315219/custom-marker-with-user-image-inside-the-pin
-
-
-
-
-
-
-
-
-
-## 🔍 map(Google)
+## 🔍 Google Map
 
 총 3가지 지도 API(Google, Kakao, Naver) 중 **Google Map**을 선택한 이유는 다음과 같습니다. <br>
 
 - **다양한 API 및 개발 자료 제공**  
-  - 카메라 이동 및 각도 조절  
-  - 마커 및 지도 상 객체 표시  
-  - TimeZone 등 다양한 기능  
-- **전 세계 데이터베이스 보유**  
-  - ARCore Geospatial API 기반 좌표를 이용해 여러 국가에서 활용 가능  
-- **풍부한 지도 커스터마이징 기능**  
-
-> 위 작업을 위해 필요한 GPS 권한, 서버 데이터 송수신 설정 등은  
-> [permission](https://github.com/Gnoam-R/ARAD/blob/main/project/functions/permission.md),  
-> [network](https://github.com/Gnoam-R/ARAD/blob/main/project/functions/network.md) 문서를 참고해주세요. <br>
+  - 카메라 이동 및 회전  
+  - 마커 및 지도 위 오브젝트 표시  
+  - TimeZone 등 다양한 기능 제공  
+- **전 세계 데이터 커버리지**  
+  - ARCore Geospatial API 기반 좌표 데이터를 활용해 여러 국가에서 활용 가능  
+- **풍부한 지도 커스터마이징 기능**
+  - 지도 스타일, 마커 디자인 등 다양한 시각적 요소를 자유롭게 설정 가능
 
 ---
 
@@ -154,24 +19,16 @@ https://stackoverflow.com/questions/39315219/custom-marker-with-user-image-insid
 - [x] 맵 배경 커스터마이징  
 - [x] 마커 Bitmap 커스텀  
 - [x] POI(위·경도) 기반 마커 활성화  
-- [ ] 내 위치 → 지하철 위치 거리 및 AR 마커 거리 측정
+- [x] 내 위치 → 지하철 위치 거리 및 AR 마커 거리 측정
 
 ---
 
 ## 📷 Screenshot
-
-<table align="center">
-  <tr>
-    <td align="center">구글 맵 1</td>
-    <td align="center">구글 맵 2</td>
-    <td align="center">구글 맵 3</td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/f2f1aea6-041c-4ba5-9d28-5428a8c295b0" width="200" height="450"/></td>
-    <td><img src="https://github.com/user-attachments/assets/f810c3d4-a82b-4ffb-bead-c388fdfcdf58" width="200" height="450"/></td>
-    <td><img src="https://github.com/user-attachments/assets/4ab83bdc-69be-474f-91c7-6b75ea455f38" width="200" height="450"/></td>
-  </tr>
-</table>
+<h1 align="center">
+|   구글 맵1   |   구글 맵2   |  구글 맵3 |
+| :-------------: | :-------------: | :-------------: |
+| <img src="https://github.com/user-attachments/assets/f2f1aea6-041c-4ba5-9d28-5428a8c295b0" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/f810c3d4-a82b-4ffb-bead-c388fdfcdf58" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/4ab83bdc-69be-474f-91c7-6b75ea455f38" width="200" height="450"/> |
+</h1>
 
 ---
 
@@ -180,8 +37,7 @@ https://stackoverflow.com/questions/39315219/custom-marker-with-user-image-insid
 ### 1️⃣ 구글 맵 스타일 커스텀
 
 `GoogleMap.setMapStyle()`을 통해 스타일 커스텀을 적용했습니다. <br>  
-[스타일 지정 마법사](https://mapstyle.withgoogle.com/)를 사용했고,  
-디자인은 [SnazzyMaps - Subtle Grayscale](https://snazzymaps.com/style/15/subtle-grayscale)을 참고했습니다.
+[스타일 지정 마법사](https://mapstyle.withgoogle.com/)를 사용했고, 디자인은 [SnazzyMaps - Subtle Grayscale](https://snazzymaps.com/style/15/subtle-grayscale)을 참고했습니다.
 
 ```kotlin
 mGoogleMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(mContext, R.raw.style2_json))
@@ -216,8 +72,7 @@ bitmapStarBucks = createUserBitmap(
 
 ### 3️⃣ POI 위·경도 기반 카메라 이동 및 마킹
 
-MapView `onCreate()` 이후 서버로부터 위경도 데이터를 수신하고  
-콜백을 활용해 `setLastLocation()`을 실행합니다.
+MapView `onCreate()` 이후 서버로부터 위경도 데이터를 수신하고 콜백을 활용해 `setLastLocation()`을 실행합니다.
 
 ```kotlin
 override fun setLastLocation(location: Location) {
@@ -247,7 +102,6 @@ override fun setLastLocation(location: Location) {
 ---
 
 ## 📚 Reference
-
 - https://breadboy.tistory.com/282  
 - https://developers.google.com/maps/documentation/get-map-id?hl=ko&authuser=0  
 - https://stackoverflow.com/questions/39315219/custom-marker-with-user-image-inside-the-pin
