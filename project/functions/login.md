@@ -1,12 +1,16 @@
 ## 🔍 Login
 소셜 로그인은 Google과 Kakao에서 제공하는 OAuth API를 활용해 Access Token을 발급받아 인증 절차를 진행하고, 이후 자체 서버로 인증 정보를 전달해 사용자 식별 및 로그인 처리를 완료합니다. <br><br>
 
+---
+
 ## 📝 Feature Check List
   - [x] Google, Kakao 소셜 로그인
   - [x] 회원 가입 및 탈퇴 기능
   - [x] 로그인 토큰 수령 및 사용자 정보 수집
   - [x] UX 최적
 <br>
+
+---
 
 ## 📷 Screenshot
 <h1 align="center">
@@ -17,6 +21,8 @@
 
 </h1>
 <br>
+
+---
 
 ## 📮 관련 이슈
 
