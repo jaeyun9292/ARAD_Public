@@ -33,7 +33,7 @@
 
 |  업로드 정보  |
 | :-------------: |
-<img src="https://github.com/user-attachments/assets/de9ef169-b9c0-4e7e-a305-94f108f5f7e9" width="600" height="450"/> | 
+| <img src="https://github.com/user-attachments/assets/de9ef169-b9c0-4e7e-a305-94f108f5f7e9" width="600" height="450"/> | 
 
 </h1>
 
