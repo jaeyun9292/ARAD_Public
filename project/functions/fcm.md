@@ -4,12 +4,10 @@
 무료로 안정적인 메시지 전송이 가능한 **크로스 플랫폼 메시징 솔루션**입니다. <br>
 
 제가 FCM을 사용하는 목적은,  
-회사 서버 측에서 앱 사용자에게 특정 상황에 대한 이벤트 메시지를 전달하기 위해서입니다. <br><br>
+회사 서버 측에서 앱 사용자에게 특정 상황에 대한 이벤트 메시지를 전달하기 위해서입니다. <br>
 
-예를 들어, 사용자가 사진을 촬영하여 서버에 이미지, 사용자 ID, 위치 정보 등을 전송할 경우,  
-이와 관련된 **포인트 지급**, **이벤트 안내** 등의 메시지를 앱으로 전달하는 데 활용됩니다. <br><br>
-
-Firebase는 오픈된 레퍼런스가 많고, 설정 및 구현이 쉬워 빠르게 도입할 수 있었습니다. <br>
+예를 들어, 사용자가 사진을 촬영하여 서버에 AR 이미지, 사용자 ID, 위치 정보 등을 전송할 경우,  
+이와 관련된 **포인트 지급**, **이벤트 안내** 등의 메시지를 앱으로 전달하는 데 활용됩니다. <br>
 
 ---
 
@@ -69,10 +67,8 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
     </intent-filter>
 </service>
 ```
-
-<br>
-exported="true"로 설정해야 Firebase가 외부에서 com.google.firebase.MESSAGING_EVENT 액션을 통해 MyFirebaseMessagingService 클래스에 접근할 수 있습니다. <br>
-해당 설정이 없으면 메시지 수신 콜백이 동작하지 않습니다. <br>
+Firebase는 외부에서 com.google.firebase.MESSAGING_EVENT 액션을 통해 MyFirebaseMessagingService에 접근합니다. <br>
+이때 exported="true"로 설정해야 콜백이 정상적으로 동작하며, 설정하지 않으면 메시지를 수신하지 못합니다. <br>
 
 ---
 
