@@ -65,8 +65,8 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
     </intent-filter>
 </service>
 ```
-Firebase는 외부에서 com.google.firebase.MESSAGING_EVENT 액션을 통해 MyFirebaseMessagingService에 접근합니다. <br>
-이때 exported="true"로 설정해야 콜백이 정상적으로 동작하며, 설정하지 않으면 메시지를 수신하지 못합니다. <br>
+Firebase는 외부에서 `com.google.firebase.MESSAGING_EVENT`액션을 통해 `MyFirebaseMessagingService`에 접근합니다. <br>
+이때 `exported="true"`로 설정해야 콜백이 정상적으로 동작하며, 설정하지 않으면 메시지를 수신하지 못합니다. <br>
 
 ---
 
