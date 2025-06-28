@@ -31,8 +31,8 @@
 이를 해결하기 위해, 로그인 로직을 클래스 단위로 분리하고 Repository 패턴을 적용하여 도메인 계층으로 분리하였습니다. <br>
 이후 클린 아키텍처 기반으로 ViewModel → UseCase → Repository 구조를 도입했습니다. <br>
 
-<b>LoginViewModel.kt</b>
 ```kotlin
+/* LoginViewModel.kt */
 @HiltViewModel
 class LoginViewModel @Inject constructor(
 	private val loginWithKakaoUseCase: LoginWithKakaoUseCase,
