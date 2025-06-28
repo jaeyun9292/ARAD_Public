@@ -1,12 +1,13 @@
 ## 🔍 Login
 소셜 로그인은 Google과 Kakao에서 제공하는 OAuth API를 활용해 구현했습니다. <br>
-사용자는 소셜 플랫폼을 통해 Access Token을 발급받아 인증 절차를 진행하며, 이후 자체 서버로 인증 정보를 전달해 사용자 식별 및 로그인 처리를 완료합니다. <br>
+사용자는 소셜 플랫폼을 통해 Access Token을 발급받아 인증 절차를 진행하며, 이후 자체 서버로 인증 정보를 전달해 사용자 식별 및 로그인 처리를 완료합니다. <br><br>
 
 ## 📝 Feature Check List
   - [x] Google, Kakao 소셜 로그인
   - [x] 회원 가입 및 탈퇴 기능
   - [x] 로그인 토큰 수령 및 사용자 정보 수집
   - [x] UX 최적
+<br>
 
 ## 📷 Screenshot
 <h1 align="center">
@@ -17,22 +18,16 @@
 
 </h1>
 
-
+<br>
 ## 📮 관련 이슈
 
 ### 로그인 기능 클래스 분리 및 구조 개선
 초기에는 로그인 기능이 특정 화면에 직접 구현되어 있어, 앱 전역에서 재사용하거나 테스트하기 어려운 구조였습니다.. <br>
 
-로그인 기능을 해당 화면에서만 사용하는 것이 아닌 앱 자체에서 소셜 로그인 & 사용자 정보 기능을 요청 
-
 이를 해결하기 위해, 로그인 로직을 클래스 단위로 분리하고 Repository 패턴을 적용하여 도메인 계층으로 분리하였습니다.
-이후 클린 아키텍처 기반으로 ViewModel → UseCase → Repository 구조를 도입했습니다. <br>
+이후 클린 아키텍처 기반으로 ViewModel → UseCase → Repository 구조를 도입했습니다. <br><br>
 
-testets
-testes
-testse
-
-LoginViewModel.kt
+<b>LoginViewModel.kt</b>
 ```kotlin
 @HiltViewModel
 class LoginViewModel @Inject constructor(
