@@ -28,7 +28,6 @@
 
 
 ## 구현 기능
- https://github.com//blob/main/project/functions/fcm.md
 * [소셜 로그인(카카오, 구글)](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/login.md)<br> 
 * [Unity(UAAL) & 안드로이드 통합](https://github.com/jaeyun9292/ARAD_Public/ARAD/blob/main/project/functions/uaal(unity%20as%20a%20library).md) <br> 
 * [FCM 푸시](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/fcm.md)<br> 
