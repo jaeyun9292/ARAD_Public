@@ -98,7 +98,7 @@ override fun setLastLocation(location: Location) {
 
 ---
 
-## 📚 Reference
+## 🔗 Reference
 - https://developers.google.com/maps/documentation/get-map-id?hl=ko&authuser=0  
 - https://developers.google.com/android/reference/com/google/android/gms/maps/MapView?authuser=0
 - https://developers.google.com/maps/documentation/android-sdk/views?hl=ko
