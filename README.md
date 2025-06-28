@@ -6,11 +6,9 @@
 ## 🖥️ 프로젝트 소개
 ### [ARAD](https://play.google.com/store/apps/details?id=com.anyractive.arad_january&pcampaignid=web_share)는 촬영을 통해 포인트를 얻고, 이를 상품권으로 교환할 수 있는 보상형 플랫폼입니다.
 * ARAD 앱은 유저의 참여에 대한 보상을 제공하는 앱입니다. <br> 
-* 이벤트 AR 이미지가 생성된 곳에 촬영을 하면 포인트를 받을 수 있어요. <br>
-* 유저들은 지급 받은 포인트로 상품권이랑 교환할 수 있습니다. <br> 
-* 쿠팡 파트너스 및 업체의 AR 광고를 통해 보다 뛰어난 마케팅 사업을 진행할 수 있습니다. 
-
-<br>
+* 이벤트 장소에 생성된 AR 이미지를 촬영하면 포인트를 받을 수 있습니다. <br>
+* 사용자는 적립한 포인트를 다양한 상품권으로 교환할 수 있습니다. <br> 
+* 쿠팡 파트너스 및 제휴 업체의 AR 광고를 통해 효과적인 마케팅도 지원합니다. <br>
 
 ## 사용 기술
 <br>
@@ -19,7 +17,7 @@
 <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=Android&logoColor=white"> 
 <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=Kotlin&logoColor=white"> 
 <img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white"> 
-<img src="https://img.shields.io/badge/Google Maps-4285F4?style=for-the-badge&logo=Google Maps&logoColor=white"> 
+<img src="https://img.shields.io/badge/Google Maps-4285F4?style=for-the-badge&logo=googlemaps&logoColor=white"> 
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> 
 <img src="https://img.shields.io/badge/unity-FCC624?style=for-the-badge&logo=unity&logoColor=black"> 
 
@@ -30,14 +28,13 @@
 
 
 ## 구현 기능
-
-* [Permission 요청 & 확인](https://github.com/Gnoam-R/ARAD/blob/main/project/functions/permission.md) <br> 
-* [소셜 로그인(카카오, 구글)](https://github.com/Gnoam-R/ARAD/blob/main/project/functions/login.md)<br> 
-* [Unity를 안드로이드 프로젝트에 통합(UAAL)](https://github.com/Gnoam-R/ARAD/blob/main/project/functions/uaal(unity%20as%20a%20library).md) <br> 
-* [FCM 푸시](https://github.com/Gnoam-R/ARAD/edit/main/project/functions/fcm.md)<br> 
-* [GCP 서버와 http 통신(Retrofit2로 구현)](https://github.com/Gnoam-R/ARAD/blob/main/project/functions/network.md) <br> 
-* [구글 Map 구현(custom thema 적용)](https://github.com/Gnoam-R/ARAD/blob/main/project/functions/map.md) <br> 
-* UI 구성(Jetpack Navigation & Fragment) <br> 
+ https://github.com//blob/main/project/functions/fcm.md
+* [소셜 로그인(카카오, 구글)](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/login.md)<br> 
+* [Unity(UAAL) & 안드로이드 통합](https://github.com/jaeyun9292/ARAD_Public/ARAD/blob/main/project/functions/uaal(unity%20as%20a%20library).md) <br> 
+* [FCM 푸시](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/fcm.md)<br> 
+* [GCP 서버와 http 통신(Retrofit2)](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/network.md) <br> 
+* [구글 Map 구현(custom theme 적용)](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/map.md) <br> 
+* UI 구성(Jetpack Navigation & SAA) <br> 
 
 ## 서비스 아키택처
 ![image-4](https://github.com/user-attachments/assets/f3d82a87-5e2a-434e-b6f0-6b3c7dda8be8)
