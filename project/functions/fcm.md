@@ -21,7 +21,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
     /* 알림 생성 메서드 */
     private fun sendNotification(remoteMessage: RemoteMessage) {
-        val uniId: Int = (System.currentTimeMillis() / 7).toInt()
+        val uniId: Int = System.currentTimeMillis().hashcode()
 
         val intent = Intent(this, CoupangPartnerActivity::class.java).apply {
             flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
@@ -40,8 +40,8 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
         val notificationBuilder = NotificationCompat.Builder(this, channelId)
             .setSmallIcon(R.drawable.winter1)
-            .setContentTitle(remoteMessage.data["title"])
-            .setContentText(remoteMessage.data["body"])
+            .setContentTitle(remoteMessage.data["title"] ?: "알림 도착")
+            .setContentText(remoteMessage.data["body"] ?: "내용을 확인해주세요.")
             .setAutoCancel(true)
             .setSound(soundUri)
             .setContentIntent(pendingIntent)
@@ -79,10 +79,11 @@ Firebase는 외부에서 com.google.firebase.MESSAGING_EVENT 액션을 통해 My
 ---
 
 ## 📷 Screenshot
-
+<h1>
 |    푸시 알람    |    푸시 알람 클릭    |
 |:--------:|:--------------:|
 | <img src="https://github.com/user-attachments/assets/50661241-3af5-4fee-838a-7d72bfc5c856" width="250" height="80"/> | <img src="https://github.com/user-attachments/assets/5a4d97a5-99f6-48d6-a983-7bf1e511e332" width="250" height="550"/> |
+</h1>
 
 ---
 
