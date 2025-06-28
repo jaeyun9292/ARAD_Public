@@ -17,8 +17,8 @@
 | <img src="https://github.com/user-attachments/assets/4e724765-1df1-4c0b-b905-6f19a8fc40e8" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/8554ba75-df1b-4ec6-9f04-e1d000466dcf" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/3dbf7731-770c-4975-8a30-223b925d0ee6" width="200" height="450"/> |
 
 </h1>
-
 <br>
+
 ## 📮 관련 이슈
 
 ### 로그인 기능 클래스 분리 및 구조 개선
