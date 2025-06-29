@@ -19,7 +19,7 @@ ARAD 에서는 이 UAAL을 통해 **AR 이미지 생성 및 촬영 기능을 구
 
 |   유니티 연동1  |   유니티 연동2   |
 | :-------------: | :-------------: |
-| <img src="https://github.com/user-attachments/assets/ea1ee3e1-5aab-4933-8fec-63f523134552" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/16da1ece-2f25-4d59-9e80-4f888d414b73" width="200" height="450"/> |
+| <img src="https://github.com/user-attachments/assets/ea1ee3e1-5aab-4933-8fec-63f523134552" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/b0dbae5c-bf74-4764-9950-692fdb22282c" width="200" height="450"/> |
 
 </h1>
 
