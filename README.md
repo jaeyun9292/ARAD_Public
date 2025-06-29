@@ -24,7 +24,7 @@
 
 ## 구현 기능
 * [소셜 로그인(Kakao, Google)](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/login.md)<br> 
-* [안드로이드 & Unity(UAAL) 통합](https://github.com/jaeyun9292/ARAD_Public/ARAD/blob/main/project/functions/uaal(unity%20as%20a%20library).md) <br> 
+* [안드로이드 & Unity(UAAL) 통합](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/uaal(unity%20as%20a%20library).md) <br> 
 * [FCM 푸시](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/fcm.md)<br> 
 * [Retrofit2 이용한 GCP 서버와 Http 통신](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/network.md) <br> 
 * [커스텀 테마 적용한 구글 맵 구현](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/map.md) <br> 
