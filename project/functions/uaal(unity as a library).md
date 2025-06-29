@@ -1,6 +1,6 @@
 ## 🔍 UAAL (Unity as a Library)
 
-`UAAL`은 Android를 포함한 다양한 플랫폼에서 Unity 기반의 AR 기능을 통합할 수 있는 프레임워크입니다. <br>  
+`UAAL`은 Android를 포함한 다양한 플랫폼에서 Unity 기반의 AR 기능을 통합할 수 있는 프레임워크입니다. <br>
 ARAD 에서는 이 UAAL을 통해 **AR 이미지 생성 및 촬영 기능을 구현**하고, 해당 데이터를 서버에 업로드하는 기능을 개발하였습니다.
 
 ---
