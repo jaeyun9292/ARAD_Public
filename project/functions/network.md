@@ -26,13 +26,15 @@
 
 <h1 align="center">
 
-|  AR 이미지 업로드   |  업로드 요청   |  이미지 승인 or 반려 |
+| 이미지 확인 | 업로드 요청 | 이미지 검토 |
 | :-------------: | :-------------: | :-------------: |
-| <img src="https://github.com/user-attachments/assets/c8007af9-9fde-405e-b34f-0dcb2ee2c85c" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/b6182c6f-09e7-404d-b03f-5233b9a90eab" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/7d455f94-cc37-40eb-90f4-47631dd33dc6" width="250" height="450"/> | 
+| <img src="https://github.com/user-attachments/assets/c8007af9-9fde-405e-b34f-0dcb2ee2c85c" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/b6182c6f-09e7-404d-b03f-5233b9a90eab" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/a710fef9-d47f-4c7d-b320-161e67f125a7" width="200" height="450"/> | 
  
-|  업로드 정보  |
+|  업로드 정보 조회  |
 |:-------------:|
-| <img src="https://github.com/user-attachments/assets/de9ef169-b9c0-4e7e-a305-94f108f5f7e9" width="570" height="450"/> |
+| <img src="https://github.com/user-attachments/assets/7c800bfa-3916-4b6c-bcc6-ab5fa7749333" width="570" height="450"/> |
+
+
 
 
 </h1>
