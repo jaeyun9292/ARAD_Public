@@ -31,8 +31,6 @@
 * SAA 기반 Jetpack Navigation 구조 설계 <br><br>
 
 ## 서비스 아키텍처
-![image-4](https://github.com/user-attachments/assets/f3d82a87-5e2a-434e-b6f0-6b3c7dda8be8)
-
 
 <br>
 
@@ -42,7 +40,7 @@
 
 | **권한 요청** | **소셜 로그인** | **쿠팡 웹뷰** | **구글 맵 화면** |
 |---|---|---|---|
-| <img src="https://github.com/rohhyungwoo/ARAD_Public/assets/67363759/d6e47aa0-6713-480e-927f-291f9887f6d7" width="180" height="400"/> | <img src="https://github.com/rohhyungwoo/ARAD_Public/assets/67363759/cb926de5-33eb-46d2-a6d8-c3ef6e84dca3" width="180" height="400"/> | <img src="https://github.com/rohhyungwoo/ARAD_Public/assets/67363759/662f5a81-5ef4-49cb-a973-5f370dfb8c0e" width="180" height="400"/>| <img src="https://github.com/rohhyungwoo/ARAD_Public/assets/67363759/a5f915ee-a355-4600-8b51-bba8d41b925d" width="180" height="400"/>
+| <img src="https://github.com/rohhyungwoo/ARAD_Public/assets/67363759/d6e47aa0-6713-480e-927f-291f9887f6d7" width="180" height="400"/> | <img src="https://github.com/rohhyungwoo/ARAD_Public/assets/67363759/cb926de5-33eb-46d2-a6d8-c3ef6e84dca3" width="180" height="400"/> | <img src="https://github.com/user-attachments/assets/598f702f-0893-4eb1-bced-8cf0405701dc" width="180" height="400"/>| <img src="https://github.com/user-attachments/assets/98b74d46-7b20-4fb1-9f50-3cba4cdbdf4b" width="180" height="400"/>
 
 | **AR 뷰** | **AR 뷰2** | **AR 뷰3** | **POI 업로드** | 
 |---|---|---|---|
