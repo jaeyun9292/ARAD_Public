@@ -1,7 +1,7 @@
 
 # AR로 즐기는 새로운 앱 테크 - ARAD
 
-<h1 align="center"> <img src="https://github.com/user-attachments/assets/e94947fc-8292-4a56-8c83-e34eb1da6dd7"   /> </h1>
+<h1 align="center"> <img src="https://github.com/user-attachments/assets/99e316a3-e59b-4e25-9dda-8ec4cb5b56fd"/> </h1>
 
 ## 🖥️ 프로젝트 소개
 ### [ARAD](https://play.google.com/store/apps/details?id=com.anyractive.arad_january&pcampaignid=web_share)는 촬영을 통해 포인트를 얻고, 이를 상품권으로 교환할 수 있는 보상형 플랫폼입니다.
