@@ -28,11 +28,11 @@
 
 | 이미지 확인 | 업로드 요청 | 이미지 검토 |
 | :-------------: | :-------------: | :-------------: |
-| <img src="https://github.com/user-attachments/assets/65c34998-a20c-4a5c-a2e6-72ee25e27897" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/f28f5870-109b-4359-aec2-c41fa59f0b75" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/a710fef9-d47f-4c7d-b320-161e67f125a7" width="200" height="450"/> | 
+| <img src="https://github.com/user-attachments/assets/65c34998-a20c-4a5c-a2e6-72ee25e27897" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/f28f5870-109b-4359-aec2-c41fa59f0b75" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/f44dc007-f98c-4808-952f-090278620c06" width="200" height="450"/> | 
  
 |  업로드 정보 조회  |
 |:-------------:|
-| <img src="https://github.com/user-attachments/assets/7c800bfa-3916-4b6c-bcc6-ab5fa7749333" width="570" height="450"/> |
+| <img src="https://github.com/user-attachments/assets/8a8bbdff-558f-4925-8620-aa2d9484f21c" width="570" height="450"/> |
 
 </h1>
 
@@ -58,11 +58,10 @@ Unity에서 Android의 업로드 메서드를 직접 호출할 수 있도록 인
 모든 비동기 작업을 하나의 `Coroutine`블록 내에서 순차적으로 (사용자 정보 → POI 데이터 → 지도 렌더링) 실행되도록 구조를 변경하였습니다. <br>
 네트워크 통신에 실패하더라도 기본 마커를 먼저 표시하도록 예외 처리를 추가하여 앱이 종료되지 않도록 개선하였습니다. <br><br><br>
 
-
 <h1 align="center">
     
 |    POI Marker    |
 |:-------------:|
-| <img src="https://github.com/user-attachments/assets/a8ebf5cd-e56a-4604-b47d-1b609faab578" width="200" height="450"/> |
+| <img src="https://github.com/user-attachments/assets/6beafa27-9e61-4f0e-bcd7-ceaed11354cb" width="200" height="450"/> |
 
 </h1>
