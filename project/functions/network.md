@@ -28,7 +28,7 @@
 
 | 이미지 확인 | 업로드 요청 | 이미지 검토 |
 | :-------------: | :-------------: | :-------------: |
-| <img src="https://github.com/user-attachments/assets/65c34998-a20c-4a5c-a2e6-72ee25e27897" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/f28f5870-109b-4359-aec2-c41fa59f0b75" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/f44dc007-f98c-4808-952f-090278620c06" width="200" height="450"/> | 
+| <img src="https://github.com/user-attachments/assets/65c34998-a20c-4a5c-a2e6-72ee25e27897" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/f28f5870-109b-4359-aec2-c41fa59f0b75" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/f44dc007-f98c-4808-952f-090278620c06" width="360" height="450"/> | 
  
 |  업로드 정보 조회  |
 |:-------------:|
