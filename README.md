@@ -43,10 +43,9 @@
 |---|---|---|---|
 | <img src="https://github.com/rohhyungwoo/ARAD_Public/assets/67363759/d6e47aa0-6713-480e-927f-291f9887f6d7" width="180" height="400"/> | <img src="https://github.com/rohhyungwoo/ARAD_Public/assets/67363759/cb926de5-33eb-46d2-a6d8-c3ef6e84dca3" width="180" height="400"/> | <img src="https://github.com/user-attachments/assets/598f702f-0893-4eb1-bced-8cf0405701dc" width="180" height="400"/>| <img src="https://github.com/user-attachments/assets/98b74d46-7b20-4fb1-9f50-3cba4cdbdf4b" width="180" height="400"/>
 
-| **AR 뷰** | **AR 뷰2** | **AR 뷰3** | **POI 업로드** | 
+| **AR 뷰** | **POI 업로드** | **POI 조회** | **상품권 교환** | 
 |---|---|---|---|
-| <img src="https://github.com/rohhyungwoo/ARAD_Public/assets/67363759/a97ac82a-33b3-4a2d-bfd9-8de9eb927b8f" width="180" height="400"/> | <img src="https://github.com/user-attachments/assets/015c620b-31e6-4fcf-b483-0836e03d5470" width="180" height="400"/> | <img src="https://github.com/user-attachments/assets/3566c42c-da07-4b65-9e1b-9cd16e34705d" width="180" height="400"/> |<img src="https://github.com/rohhyungwoo/ARAD_Public/assets/67363759/585f06da-b59c-43d3-b180-4ac7c00e5ffc" width="180" height="400"/> 
-
+| <img src="https://github.com/rohhyungwoo/ARAD_Public/assets/67363759/a97ac82a-33b3-4a2d-bfd9-8de9eb927b8f" width="180" height="400"/> | <img src="https://github.com/user-attachments/assets/4e181ee1-bb43-4434-8253-1a6f62ff70d6" width="180" height="400"/> | <img src="https://github.com/user-attachments/assets/47aaa4e2-8a35-45cd-9e4c-6d7c89127078" width="180" height="400"/> |<img src="https://github.com/user-attachments/assets/d7e072cf-675a-4e19-aeb1-c9310b0b69a1" width="180" height="400"/> 
 <br>
 
 </h1>
