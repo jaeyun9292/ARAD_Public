@@ -1,7 +1,8 @@
 
 # AR로 즐기는 새로운 앱 테크 - ARAD
 
-<h1 align="center"> <img src="https://github.com/user-attachments/assets/99e316a3-e59b-4e25-9dda-8ec4cb5b56fd"/> </h1>
+<h1 align="center"> <img src="https://github.com/user-attachments/assets/88b412b2-4e8e-4908-ad7c-595535c8518f"/> 
+</h1>
 
 ## 🖥️ 프로젝트 소개
 ### [ARAD](https://play.google.com/store/apps/details?id=com.anyractive.arad_january&pcampaignid=web_share)는 촬영을 통해 포인트를 얻고, 이를 상품권으로 교환할 수 있는 보상형 플랫폼입니다.
@@ -44,7 +45,7 @@
 
 | **AR 뷰** | **AR 뷰2** | **AR 뷰3** | **POI 업로드** | 
 |---|---|---|---|
-| <img src="https://github.com/rohhyungwoo/ARAD_Public/assets/67363759/a97ac82a-33b3-4a2d-bfd9-8de9eb927b8f" width="180" height="400"/> | <img src="https://github.com/rohhyungwoo/ARAD_Public/assets/67363759/4b68bb9d-e610-46de-93c4-90fadd0f861a" width="180" height="400"/> | <img src="https://github.com/rohhyungwoo/ARAD_Public/assets/67363759/4e5bb0e1-3b92-45e1-91b6-0205fde399d0" width="180" height="400"/> |<img src="https://github.com/rohhyungwoo/ARAD_Public/assets/67363759/585f06da-b59c-43d3-b180-4ac7c00e5ffc" width="180" height="400"/> 
+| <img src="https://github.com/rohhyungwoo/ARAD_Public/assets/67363759/a97ac82a-33b3-4a2d-bfd9-8de9eb927b8f" width="180" height="400"/> | <img src="https://github.com/user-attachments/assets/015c620b-31e6-4fcf-b483-0836e03d5470" width="180" height="400"/> | <img src="https://github.com/user-attachments/assets/3566c42c-da07-4b65-9e1b-9cd16e34705d" width="180" height="400"/> |<img src="https://github.com/rohhyungwoo/ARAD_Public/assets/67363759/585f06da-b59c-43d3-b180-4ac7c00e5ffc" width="180" height="400"/> 
 
 <br>
 
