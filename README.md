@@ -12,7 +12,7 @@
 * 쿠팡 파트너스 및 제휴 업체의 AR 광고를 통해 효과적인 마케팅효과를 기대할 수 있습니다. <br><br>
 
 ## 사용 기술
-<div align=center> 
+<div align=start> 
 <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=Figma&logoColor=white"> 
 <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=Android&logoColor=white"> 
 <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=Kotlin&logoColor=white"> 
@@ -32,6 +32,7 @@
 * SAA 기반 Jetpack Navigation 구조 설계 <br><br>
 
 ## 서비스 아키텍처
+![image](https://github.com/user-attachments/assets/b434898c-4c6e-40f4-8899-59b2b45bf74c)
 
 <br>
 
