@@ -1,12 +1,15 @@
-
 <img src="https://github.com/user-attachments/assets/ff5bd7dd-8568-4dc4-80a8-46aed1a66eed"/>
+
+![Arad_스크린샷](https://github.com/user-attachments/assets/54b5ced1-6710-4df5-9e75-300ae4145d96)
 
 ## 서비스 소개
 ### [ARAD](https://play.google.com/store/apps/details?id=com.anyractive.arad_january&pcampaignid=web_share)는 촬영을 통해 포인트를 얻고, 이를 상품권으로 교환할 수 있는 보상형 플랫폼입니다.
 * ARAD는 사용자의 참여에 보상을 제공하는 리워드형 앱입니다. <br> 
 * 이벤트 장소의 AR 광고 이미지를 촬영하면 포인트를 적립할 수 있습니다. <br>
 * 적립한 포인트는 다양한 상품권으로 교환할 수 있습니다. <br> 
-* 광고주는 AR 광고를 통해 효과적인 마케팅 효과를 기대할 수 있습니다. <br><br>
+* 광고주는 AR 광고를 통해 효과적인 마케팅 효과를 기대할 수 있습니다.
+
+<br>
 
 ## 사용 기술
 <div align=start> 
@@ -18,14 +21,17 @@
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> 
 <img src="https://img.shields.io/badge/unity-FCC624?style=for-the-badge&logo=unity&logoColor=black"> 
 </div>
+
 <br>
 
 ## 구현 기능
-* [소셜 로그인(Kakao, Google)](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/login.md)<br> 
-* [안드로이드 & Unity(UAAL) 통합](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/uaal(unity%20as%20a%20library).md) <br> 
-* [FCM 푸시](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/fcm.md)<br> 
+* [소셜 로그인](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/login.md)<br>
+* [커스텀 테마 적용한 구글 맵 구현](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/map.md) <br>
 * [Retrofit2 이용한 GCP 서버와 Http 통신](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/network.md) <br> 
-* [커스텀 테마 적용한 구글 맵 구현](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/map.md) <br><br>
+* [안드로이드 & UAAL 통합](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/uaal(unity%20as%20a%20library).md) <br> 
+* [FCM 푸시](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/fcm.md)
+
+<br>
 
 ## 서비스 아키텍처
 ![image](https://github.com/user-attachments/assets/b434898c-4c6e-40f4-8899-59b2b45bf74c) <br><br>
