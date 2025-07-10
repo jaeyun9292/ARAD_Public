@@ -1,7 +1,7 @@
 
 <img src="https://github.com/user-attachments/assets/ff5bd7dd-8568-4dc4-80a8-46aed1a66eed"/>
 
-## 🖥️ 프로젝트 소개
+## 서비스 소개
 ### [ARAD](https://play.google.com/store/apps/details?id=com.anyractive.arad_january&pcampaignid=web_share)는 촬영을 통해 포인트를 얻고, 이를 상품권으로 교환할 수 있는 보상형 플랫폼입니다.
 * ARAD는 사용자의 참여에 보상을 제공하는 리워드형 앱입니다. <br> 
 * 이벤트 장소의 AR 광고 이미지를 촬영하면 포인트를 적립할 수 있습니다. <br>
@@ -25,17 +25,12 @@
 * [안드로이드 & Unity(UAAL) 통합](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/uaal(unity%20as%20a%20library).md) <br> 
 * [FCM 푸시](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/fcm.md)<br> 
 * [Retrofit2 이용한 GCP 서버와 Http 통신](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/network.md) <br> 
-* [커스텀 테마 적용한 구글 맵 구현](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/map.md) <br> 
-* SAA 기반 Jetpack Navigation 구조 설계 <br><br>
+* [커스텀 테마 적용한 구글 맵 구현](https://github.com/jaeyun9292/ARAD_Public/blob/main/project/functions/map.md) <br><br>
 
 ## 서비스 아키텍처
-![image](https://github.com/user-attachments/assets/b434898c-4c6e-40f4-8899-59b2b45bf74c)
+![image](https://github.com/user-attachments/assets/b434898c-4c6e-40f4-8899-59b2b45bf74c) <br><br>
 
-<br>
-
-## 스크린샷
-
-<h1 align="center">
+## 실행 화면
 
 | **권한 요청** | **소셜 로그인** | **쿠팡 웹뷰** | **구글 맵 화면** |
 |---|---|---|---|
@@ -43,9 +38,6 @@
 
 | **AR 뷰** | **POI 업로드** | **POI 조회** | **상품권 교환** | 
 |---|---|---|---|
-| <img src="https://github.com/rohhyungwoo/ARAD_Public/assets/67363759/a97ac82a-33b3-4a2d-bfd9-8de9eb927b8f" width="180" height="400"/> | <img src="https://github.com/user-attachments/assets/4e181ee1-bb43-4434-8253-1a6f62ff70d6" width="180" height="400"/> | <img src="https://github.com/user-attachments/assets/47aaa4e2-8a35-45cd-9e4c-6d7c89127078" width="180" height="400"/> |<img src="https://github.com/user-attachments/assets/d7e072cf-675a-4e19-aeb1-c9310b0b69a1" width="180" height="400"/> 
-<br>
+| <img src="https://github.com/rohhyungwoo/ARAD_Public/assets/67363759/a97ac82a-33b3-4a2d-bfd9-8de9eb927b8f" width="180" height="400"/> | <img src="https://github.com/user-attachments/assets/4e181ee1-bb43-4434-8253-1a6f62ff70d6" width="180" height="400"/> | <img src="https://github.com/user-attachments/assets/47aaa4e2-8a35-45cd-9e4c-6d7c89127078" width="180" height="400"/> |<img src="https://github.com/user-attachments/assets/d7e072cf-675a-4e19-aeb1-c9310b0b69a1" width="180" height="400"/>
 
-</h1>
-<br>
-
+<br><br>
