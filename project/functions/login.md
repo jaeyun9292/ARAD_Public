@@ -1,28 +1,23 @@
 ## 🔍 Login
 회원가입 절차를 간소화하기 위해 **소셜 로그인 기능**을 구현하였습니다. <br>
-Google과 Kakao에서 제공하는 **OAuth API**를 통해 Access Token을 발급받아 인증 절차를 진행하였고, <br>
-이후 자체 서버로 인증 정보를 전달하여 사용자 식별 및 로그인 처리를 완료하였습니다. <br>
-
----
+Google과 Kakao에서 제공하는 OAuth API를 통해 Access Token을 발급받아 인증 절차를 진행하였고, <br>
+이후 자체 서버로 인증 정보를 전달하여 사용자 식별 및 로그인 처리를 완료하였습니다.
+<br><br>
 
 ## 📝 Feature Check List
   - [x] Google, Kakao 소셜 로그인
   - [x] 회원 가입 및 탈퇴 기능
   - [x] 로그인 토큰 수령 및 사용자 정보 수집
   - [x] UX 최적화
-
----
+<br><br>
 
 ## 📷 Screenshot
-<h1 align="center">
 
 |    소셜 로그인1    |   소셜 로그인2   |  소셜 로그인3 |
 | :-------------: | :-------------: | :-------------: |
 | <img src="https://github.com/user-attachments/assets/4e724765-1df1-4c0b-b905-6f19a8fc40e8" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/5d57208e-83a1-40c9-ae8e-55ac177da679" width="200" height="450"/> | <img src="https://github.com/user-attachments/assets/92da183d-680a-439f-8dab-e4edb66f2d72" width="200" height="450"/> |
 
-</h1>
-
----
+<br>
 
 ## 📮 관련 이슈
 
