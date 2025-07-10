@@ -1,7 +1,5 @@
 <img src="https://github.com/user-attachments/assets/ff5bd7dd-8568-4dc4-80a8-46aed1a66eed"/>
 
-![Arad_스크린샷](https://github.com/user-attachments/assets/54b5ced1-6710-4df5-9e75-300ae4145d96)
-
 ## 서비스 소개
 ### [ARAD](https://play.google.com/store/apps/details?id=com.anyractive.arad_january&pcampaignid=web_share)는 촬영을 통해 포인트를 얻고, 이를 상품권으로 교환할 수 있는 보상형 플랫폼입니다.
 * ARAD는 사용자의 참여에 보상을 제공하는 리워드형 앱입니다. <br> 
